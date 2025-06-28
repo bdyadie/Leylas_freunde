@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: #fff;
+}
+
+header {
+    background: #ff0055;
+    padding: 2rem;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.8rem;
+}
+
+section {
+    padding: 2rem;
+    max-width: 1000px;
+    margin: auto;
+}
+
+h2 {
+    color: #ff0055;
+    border-bottom: 2px solid #ff0055;
+    padding-bottom: 0.5rem;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.gallery img {
+    max-width: 300px;
+    border-radius: 10px;
+    border: 3px solid #ff0055;
+    transition: transform 0.3s ease, box-shadow 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #ff0055;
+}
+
+.upload-box {
+    background: #222;
+    border: 2px dashed #555;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 1rem;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+label.upload-label {
+    padding: 1rem 2rem;
+    background: #ff0055;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.band-info {
+    background: #222;
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-top: 2rem;
+}
+
+.links a {
+    color: #00f2ff;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.contact-box {
+    background: #222;
+    padding: 1rem;
+    border-radius: 10px;
+}
+
+.contact-box p {
+    margin: 0.5rem 0;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #222;
+    margin-top: 2rem;
+    color: #777;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .gallery img {
+        max-width: 100%;
+    }
+
+    .upload-label {
+        width: 100%;
+    }
+
+    .band-info, .contact-box {
+        font-size: 0.95rem;
+    }
+}
