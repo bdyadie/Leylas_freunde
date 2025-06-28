@@ -1,110 +1,22 @@
-index.html:
-
 <!DOCTYPE html>
 <html lang="de">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leyla’s Freunde – Fanportal</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: #111;
-            color: #fff;
-        }
 
-        header {
-            background: #ff0055;
-            padding: 2rem;
-            text-align: center;
-        }
+    <!-- SEO & Social -->
+    <meta name="description" content="Leyla’s Freunde – Offizielle Fanplattform für orientalische Popmusik.">
+    <meta name="keywords" content="Leyla’s Freunde, orientalische Popmusik, Band, Fanportal">
+    <meta property="og:title" content="Leyla’s Freunde – Fanportal">
+    <meta property="og:description" content="Offizielle Seite von Leyla’s Freunde mit Bildern, Infos & Musiklinks.">
+    <meta property="og:image" content="https://yourdomain.com/preview.jpg">
+    <meta property="og:url" content="https://yourdomain.com">
+    <meta name="theme-color" content="#ff0055">
 
-        header h1 {
-            margin: 0;
-            font-size: 2.8rem;
-        }
-
-        section {
-            padding: 2rem;
-            max-width: 1000px;
-            margin: auto;
-        }
-
-        h2 {
-            color: #ff0055;
-            border-bottom: 2px solid #ff0055;
-            padding-bottom: 0.5rem;
-        }
-
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-            margin-top: 1rem;
-        }
-
-        .gallery img {
-            max-width: 300px;
-            border-radius: 10px;
-            border: 3px solid #ff0055;
-        }
-
-        .upload-box {
-            background: #222;
-            border: 2px dashed #555;
-            padding: 2rem;
-            text-align: center;
-            border-radius: 10px;
-            margin-top: 1rem;
-        }
-
-        input[type="file"] {
-            display: none;
-        }
-
-        label.upload-label {
-            padding: 1rem 2rem;
-            background: #ff0055;
-            color: white;
-            border-radius: 5px;
-            cursor: pointer;
-            display: inline-block;
-            font-weight: bold;
-        }
-
-        .band-info {
-            background: #222;
-            padding: 1.5rem;
-            border-radius: 10px;
-            margin-top: 2rem;
-        }
-
-        .links a {
-            color: #00f2ff;
-            text-decoration: none;
-            display: block;
-            margin-bottom: 0.5rem;
-        }
-
-        .contact-box {
-            background: #222;
-            padding: 1rem;
-            border-radius: 10px;
-        }
-
-        .contact-box p {
-            margin: 0.5rem 0;
-        }
-
-        footer {
-            text-align: center;
-            padding: 1rem;
-            background: #222;
-            margin-top: 2rem;
-            color: #777;
-        }
-    </style>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
 </head>
 <body>
 
@@ -116,7 +28,7 @@ index.html:
 <section id="upload">
     <h2>📸 Bilder deiner Band</h2>
     <div class="upload-box">
-        <label for="imageUpload" class="upload-label">Bild auswählen</label>
+        <label for="imageUpload" class="upload-label" aria-label="Bild zur Galerie hochladen">Bild auswählen</label>
         <input type="file" id="imageUpload" accept="image/*" multiple>
         <div class="gallery" id="gallery"></div>
     </div>
@@ -156,23 +68,5 @@ index.html:
     &copy; 2025 Leyla’s Freunde – Alle Rechte vorbehalten
 </footer>
 
-<script>
-    const imageInput = document.getElementById('imageUpload');
-    const gallery = document.getElementById('gallery');
-
-    imageInput.addEventListener('change', () => {
-        gallery.innerHTML = '';
-        Array.from(imageInput.files).forEach(file => {
-            const reader = new FileReader();
-            reader.onload = function(e) {
-                const img = document.createElement('img');
-                img.src = e.target.result;
-                gallery.appendChild(img);
-            };
-            reader.readAsDataURL(file);
-        });
-    });
-</script>
-
 </body>
-                              </html>
+</html>
