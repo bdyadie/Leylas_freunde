@@ -1,72 +1,121 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leyla’s Freunde – Fanportal</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leyla’s Freunde – Fanportal</title>
 
-    <!-- SEO & Social -->
-    <meta name="description" content="Leyla’s Freunde – Offizielle Fanplattform für orientalische Popmusik.">
-    <meta name="keywords" content="Leyla’s Freunde, orientalische Popmusik, Band, Fanportal">
-    <meta property="og:title" content="Leyla’s Freunde – Fanportal">
-    <meta property="og:description" content="Offizielle Seite von Leyla’s Freunde mit Bildern, Infos & Musiklinks.">
-    <meta property="og:image" content="https://yourdomain.com/preview.jpg">
-    <meta property="og:url" content="https://yourdomain.com">
-    <meta name="theme-color" content="#ff0055">
+  <meta name="description" content="Leyla’s Freunde – Offizielle Fanplattform für orientalische Popmusik.">
+  <meta name="keywords" content="Leyla’s Freunde, orientalische Popmusik, Band, Fanportal">
+  <meta property="og:title" content="Leyla’s Freunde – Fanportal">
+  <meta property="og:description" content="Offizielle Seite von Leyla’s Freunde mit Bildern, Infos & Musiklinks.">
+  <meta property="og:image" content="https://yourdomain.com/preview.jpg">
+  <meta property="og:url" content="https://yourdomain.com">
+  <meta name="theme-color" content="#ff0055">
 
-    <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <script src="app.js" defer></script>
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
 </head>
 <body>
 
 <header>
-    <h1>Leyla’s Freunde</h1>
-    <p>Offizielle Fanseite</p>
+  <h1>Leyla’s Freunde</h1>
+  <p>Offizielle Fanseite</p>
 </header>
 
 <section id="upload">
-    <h2>📸 Bilder deiner Band</h2>
-    <div class="upload-box">
-        <label for="imageUpload" class="upload-label" aria-label="Bild zur Galerie hochladen">Bild auswählen</label>
-        <input type="file" id="imageUpload" accept="image/*" multiple>
-        <div class="gallery" id="gallery"></div>
-    </div>
+  <h2>📸 Bilder deiner Band</h2>
+  <div class="upload-box">
+    <label for="imageUpload" class="upload-label" aria-label="Bild zur Galerie hochladen">Bild auswählen</label>
+    <input type="file" id="imageUpload" accept="image/*" multiple>
+    <div class="gallery" id="gallery"></div>
+  </div>
 </section>
 
 <section id="bandinfo">
-    <h2>🎤 Über uns</h2>
-    <div class="band-info">
-        <p><strong>Bandname:</strong> Leyla’s Freunde</p>
-        <p><strong>Stil:</strong> Orientalische Popmusik mit Seele</p>
-        <p><strong>Mitglieder:</strong> Leyla (Gesang), Khalid (Gitarre), Said (Percussion)</p>
-        <p><strong>Gegründet:</strong> 2022 in Kerpen</p>
-        <p><strong>Mission:</strong> Emotionen wecken & Kulturen verbinden</p>
+  <h2>🎤 Über uns</h2>
+  <div class="band-info">
+    <p><strong>Bandname:</strong> Leyla’s Freunde</p>
+    <p><strong>Stil:</strong> Orientalische Popmusik mit Seele</p>
+    <p><strong>Mitglieder:</strong> Leyla (Gesang), Khalid (Gitarre), Said (Percussion)</p>
+    <p><strong>Gegründet:</strong> 2022 in Kerpen</p>
+    <p><strong>Mission:</strong> Emotionen wecken & Kulturen verbinden</p>
+  </div>
+</section>
+
+<!-- 🎉 Events Section -->
+<section id="events">
+  <h2>🎉 Veranstaltungen</h2>
+
+  <h3>Nächstes Event</h3>
+  <div class="event-card upcoming">
+    <h4>Live-Konzert – Köln Sommerbühne</h4>
+    <p><strong>Datum:</strong> 20. Juli 2025 | <strong>Ort:</strong> Köln, Open Air</p>
+    <p>Ein besonderes Sommerkonzert mit neuer Musik, Fans und Überraschungsgästen.</p>
+    <div class="countdown" id="countdown">⏳ Countdown lädt...</div>
+  </div>
+
+  <h3>Vergangene Events</h3>
+  <div class="event-list">
+    <div class="event-card">
+      <h4>Album-Release-Party</h4>
+      <p><strong>Datum:</strong> 14. März 2025 | <strong>Ort:</strong> Kerpen</p>
+      <p>Feier zur Veröffentlichung des ersten Albums mit Live-Musik und Fans.</p>
     </div>
+    <div class="event-card">
+      <h4>Akustik-Nacht</h4>
+      <p><strong>Datum:</strong> 2. Dezember 2024 | <strong>Ort:</strong> Café Kulturraum Bonn</p>
+      <p>Intimer Abend mit akustischen Versionen unserer Songs und persönlichen Geschichten.</p>
+    </div>
+  </div>
 </section>
 
 <section id="links">
-    <h2>🌐 Unsere Seiten</h2>
-    <div class="links">
-        <a href="https://www.instagram.com/dein_bandname" target="_blank">📸 Instagram</a>
-        <a href="https://www.youtube.com/@dein_bandkanal" target="_blank">🎥 YouTube</a>
-        <a href="https://www.soundcloud.com/dein_band" target="_blank">🎵 SoundCloud</a>
-        <a href="mailto:kontakt@deinband.de">📧 kontakt@deinband.de</a>
-    </div>
+  <h2>🌐 Unsere Seiten</h2>
+  <div class="links">
+    <a href="https://www.instagram.com/dein_bandname" target="_blank">📸 Instagram</a>
+    <a href="https://www.youtube.com/@dein_bandkanal" target="_blank">🎥 YouTube</a>
+    <a href="https://www.soundcloud.com/dein_band" target="_blank">🎵 SoundCloud</a>
+    <a href="mailto:kontakt@deinband.de">📧 kontakt@deinband.de</a>
+  </div>
 </section>
 
 <section id="contact">
-    <h2>📞 Kontakt</h2>
-    <div class="contact-box">
-        <p><strong>Manager:</strong> Khalid Nouari</p>
-        <p><strong>Telefon:</strong> +49 176 62488066</p>
-        <p><strong>E-Mail:</strong> kontakt@deinband.de</p>
-    </div>
+  <h2>📞 Kontakt</h2>
+  <div class="contact-box">
+    <p><strong>Manager:</strong> Khalid Nouari</p>
+    <p><strong>Telefon:</strong> +49 176 62488066</p>
+    <p><strong>E-Mail:</strong> kontakt@deinband.de</p>
+  </div>
 </section>
 
 <footer>
-    &copy; 2025 Leyla’s Freunde – Alle Rechte vorbehalten
+  &copy; 2025 Leyla’s Freunde – Alle Rechte vorbehalten
 </footer>
+
+<!-- ⏳ Countdown Script -->
+<script>
+  const countdown = document.getElementById("countdown");
+  const eventDate = new Date("2025-07-20T18:00:00").getTime();
+
+  const interval = setInterval(() => {
+    const now = new Date().getTime();
+    const dist = eventDate - now;
+
+    if (dist < 0) {
+      clearInterval(interval);
+      countdown.textContent = "🟢 Das Event ist jetzt live!";
+      return;
+    }
+
+    const days = Math.floor(dist / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((dist % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((dist % (1000 * 60 * 60)) / (1000 * 60));
+
+    countdown.textContent = `⏳ Noch ${days} Tage, ${hours} Std, ${minutes} Min`;
+  }, 1000);
+</script>
 
 </body>
 </html>
