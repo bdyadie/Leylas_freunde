@@ -1,121 +1,136 @@
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background: #111;
-    color: #fff;
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+body {
+  font-family: 'Helvetica Neue', sans-serif;
+  line-height: 1.6;
+  background: #fff;
+  color: #222;
+  padding: 0 1rem;
+}
+
+/* Header */
 header {
-    background: #ff0055;
-    padding: 2rem;
-    text-align: center;
+  text-align: center;
+  padding: 2rem 1rem;
+  background: #ff0055;
+  color: white;
 }
 
 header h1 {
-    margin: 0;
-    font-size: 2.8rem;
+  font-size: 2.2rem;
+  margin-bottom: 0.3rem;
 }
 
+header p {
+  font-size: 1.1rem;
+}
+
+/* Section Headings */
 section {
-    padding: 2rem;
-    max-width: 1000px;
-    margin: auto;
+  padding: 2rem 0;
+  max-width: 800px;
+  margin: auto;
 }
 
-h2 {
-    color: #ff0055;
-    border-bottom: 2px solid #ff0055;
-    padding-bottom: 0.5rem;
+section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #ff0055;
+}
+
+section h3 {
+  margin-top: 1.5rem;
+  color: #444;
+}
+
+/* Upload Section */
+.upload-box {
+  margin-top: 1rem;
+}
+
+.upload-label {
+  display: inline-block;
+  background: #ff0055;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    margin-top: 1rem;
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .gallery img {
-    max-width: 300px;
-    border-radius: 10px;
-    border: 3px solid #ff0055;
-    transition: transform 0.3s ease, box-shadow 0.3s;
+  max-width: 100px;
+  border-radius: 6px;
+  border: 2px solid #eee;
 }
 
-.gallery img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 15px #ff0055;
+/* Band Info */
+.band-info p {
+  margin-bottom: 0.6rem;
 }
 
-.upload-box {
-    background: #222;
-    border: 2px dashed #555;
-    padding: 2rem;
-    text-align: center;
-    border-radius: 10px;
-    margin-top: 1rem;
+/* Events */
+.event-card {
+  background: #f9f9f9;
+  border-left: 4px solid #ff0055;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
 }
 
-input[type="file"] {
-    display: none;
+.event-card.upcoming {
+  background: #fff3f7;
+  border-color: #e91e63;
 }
 
-label.upload-label {
-    padding: 1rem 2rem;
-    background: #ff0055;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-    display: inline-block;
-    font-weight: bold;
+.event-list {
+  display: grid;
+  gap: 1.2rem;
 }
 
-.band-info {
-    background: #222;
-    padding: 1.5rem;
-    border-radius: 10px;
-    margin-top: 2rem;
+.countdown {
+  font-weight: bold;
+  margin-top: 0.8rem;
+  color: #e91e63;
 }
 
+/* Links */
 .links a {
-    color: #00f2ff;
-    text-decoration: none;
-    display: block;
-    margin-bottom: 0.5rem;
+  display: block;
+  background: #ff0055;
+  color: white;
+  padding: 0.6rem 1rem;
+  margin: 0.4rem 0;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background 0.3s;
 }
 
-.contact-box {
-    background: #222;
-    padding: 1rem;
-    border-radius: 10px;
+.links a:hover {
+  background: #e6004d;
 }
 
+/* Contact */
 .contact-box p {
-    margin: 0.5rem 0;
+  margin-bottom: 0.5rem;
 }
 
+/* Footer */
 footer {
-    text-align: center;
-    padding: 1rem;
-    background: #222;
-    margin-top: 2rem;
-    color: #777;
-}
-
-@media (max-width: 600px) {
-    header h1 {
-        font-size: 2rem;
-    }
-
-    .gallery img {
-        max-width: 100%;
-    }
-
-    .upload-label {
-        width: 100%;
-    }
-
-    .band-info, .contact-box {
-        font-size: 0.95rem;
-    }
+  text-align: center;
+  font-size: 0.9rem;
+  padding: 1rem 0;
+  background: #f0f0f0;
+  margin-top: 2rem;
 }
