@@ -1,4 +1,4 @@
-// ===== Image Upload Preview =====
+// Image Upload Preview
 const imageUpload = document.getElementById('imageUpload');
 const gallery = document.getElementById('gallery');
 
@@ -17,7 +17,7 @@ imageUpload.addEventListener('change', (e) => {
   });
 });
 
-// ===== Countdown Timer =====
+// Countdown Logic
 function updateCountdowns() {
   const countdownElements = document.querySelectorAll('.countdown');
 
