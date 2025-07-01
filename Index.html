@@ -5,17 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Leyla’s Freunde – Fanportal</title>
 
-  <!-- SEO & Meta -->
   <meta name="description" content="Leyla’s Freunde – Offizielle Fanplattform für orientalische Popmusik.">
   <meta name="keywords" content="Leyla’s Freunde, orientalische Popmusik, Band, Fanportal">
   <meta name="theme-color" content="#ff0055">
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="Leyla’s Freunde – Fanportal">
-  <meta property="og:description" content="Offizielle Seite von Leyla’s Freunde mit Bildern, Infos & Musiklinks.">
-  <meta property="og:image" content="https://yourdomain.com/preview.jpg">
-  <meta property="og:url" content="https://yourdomain.com">
-
   <link rel="icon" href="favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="style.css" />
   <script src="app.js" defer></script>
@@ -23,15 +15,18 @@
 <body>
 
   <header>
-    <h1>Leyla’s Freunde</h1>
-    <p>Offizielle Fanseite</p>
+    <img src="band-logo.png" alt="Band Logo" class="logo" />
+    <div>
+      <h1>Leyla’s Freunde</h1>
+      <p>Offizielle Fanseite</p>
+    </div>
   </header>
 
   <section id="upload">
     <h2>📸 Bilder deiner Band</h2>
     <div class="upload-box">
-      <label for="imageUpload" class="upload-label" aria-label="Bild zur Galerie hochladen">Bild auswählen</label>
-      <input type="file" id="imageUpload" accept="image/*" multiple>
+      <label for="imageUpload" class="upload-label">Bild auswählen</label>
+      <input type="file" id="imageUpload" accept="image/*" multiple />
       <div class="gallery" id="gallery"></div>
     </div>
   </section>
