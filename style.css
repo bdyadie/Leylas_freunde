@@ -1,39 +1,49 @@
-/* Base Styles */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Base */
 body {
   font-family: 'Helvetica Neue', sans-serif;
-  line-height: 1.6;
   background: #111;
   color: #f8f8f8;
+  line-height: 1.6;
   padding: 0 1rem;
 }
 
-/* Header with Logo */
+/* Header */
 header {
+  background: #111;
+  padding: 2rem 1rem;
+  text-align: center;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  background: #111;
-  padding: 2rem 1rem;
-  color: white;
-  text-align: center;
+  flex-wrap: wrap;
 }
 
-header .logo {
+.logo {
   width: 100px;
   height: 100px;
   border-radius: 50%;
   object-fit: cover;
 }
 
-/* Section Layout */
+.header-text h1 {
+  font-size: 2.2rem;
+  color: #fff;
+}
+
+.header-text p {
+  font-size: 1.1rem;
+  color: #ccc;
+}
+
+/* Sections */
 section {
   padding: 2rem 0;
   max-width: 800px;
@@ -47,8 +57,8 @@ section h2 {
 }
 
 section h3 {
-  margin-top: 1.5rem;
   color: #eee;
+  margin: 0.5rem 0;
 }
 
 /* Upload */
@@ -57,12 +67,12 @@ section h3 {
 }
 
 .upload-label {
-  display: inline-block;
   background: #ff0055;
-  color: white;
+  color: #fff;
   padding: 0.5rem 1rem;
   border-radius: 5px;
   cursor: pointer;
+  display: inline-block;
 }
 
 .upload-label:hover {
@@ -74,27 +84,22 @@ input[type="file"] {
 }
 
 .gallery {
-  margin-top: 1rem;
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
+  margin-top: 1rem;
 }
 
 .gallery img {
-  max-width: 100px;
+  width: 100px;
   border-radius: 6px;
   border: 2px solid #333;
-}
-
-/* Band Info */
-.band-info p {
-  margin-bottom: 0.6rem;
 }
 
 /* Events */
 .event-list {
   display: grid;
-  gap: 1.2rem;
+  gap: 1.5rem;
 }
 
 .event-card {
@@ -110,10 +115,9 @@ input[type="file"] {
 }
 
 .countdown {
-  font-weight: bold;
   margin-top: 0.8rem;
+  font-weight: bold;
   color: #ff80ab;
-  font-size: 0.95rem;
 }
 
 /* Links */
@@ -123,9 +127,10 @@ input[type="file"] {
   color: white;
   padding: 0.6rem 1rem;
   margin: 0.4rem 0;
-  text-decoration: none;
   border-radius: 5px;
   text-align: center;
+  text-decoration: none;
+  transition: background 0.3s ease;
 }
 
 .links a:hover {
@@ -139,17 +144,22 @@ input[type="file"] {
 
 /* Footer */
 footer {
-  text-align: center;
-  font-size: 0.9rem;
-  padding: 1rem 0;
   background: #000;
   color: #aaa;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
   margin-top: 2rem;
 }
 
 /* Responsive */
 @media (max-width: 600px) {
-  header h1 {
+  .logo {
+    width: 80px;
+    height: 80px;
+  }
+
+  .header-text h1 {
     font-size: 1.8rem;
   }
 
@@ -159,9 +169,5 @@ footer {
 
   .upload-label {
     font-size: 0.9rem;
-  }
-
-  .gallery img {
-    max-width: 80px;
   }
 }
