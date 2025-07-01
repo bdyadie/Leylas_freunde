@@ -1,29 +1,21 @@
-const imageInput = document.getElementById('imageUpload');
-const gallery = document.getElementById('gallery');
-const MAX_FILES = 10;
-const MAX_SIZE_MB = 3;
+// Image upload + preview gallery
+const imageUpload = document.getElementById("imageUpload");
+const gallery = document.getElementById("gallery");
 
-imageInput.addEventListener('change', () => {
-    gallery.innerHTML = '';
+imageUpload.addEventListener("change", function () {
+  gallery.innerHTML = ""; // clear previous images
 
-    if (imageInput.files.length > MAX_FILES) {
-        alert(`Maximal ${MAX_FILES} Bilder erlaubt.`);
-        return;
-    }
+  const files = Array.from(this.files);
+  files.forEach(file => {
+    if (!file.type.startsWith("image/")) return;
 
-    Array.from(imageInput.files).forEach(file => {
-        if (file.size > MAX_SIZE_MB * 1024 * 1024) {
-            alert(`${file.name} ist zu groß (max. ${MAX_SIZE_MB}MB).`);
-            return;
-        }
-
-        const reader = new FileReader();
-        reader.onload = function(e) {
-            const img = document.createElement('img');
-            img.src = e.target.result;
-            img.alt = "Hochgeladenes Fanbild";
-            gallery.appendChild(img);
-        };
-        reader.readAsDataURL(file);
-    });
+    const reader = new FileReader();
+    reader.onload = function (e) {
+      const img = document.createElement("img");
+      img.src = e.target.result;
+      img.alt = "Hochgeladenes Bild";
+      gallery.appendChild(img);
+    };
+    reader.readAsDataURL(file);
+  });
 });
