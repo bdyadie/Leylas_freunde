@@ -1,34 +1,36 @@
-/* Basic Reset */
+/* Base Styles */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Body & Typography */
 body {
   font-family: 'Helvetica Neue', sans-serif;
   line-height: 1.6;
-  background: #111; /* original black background */
+  background: #111;
   color: #f8f8f8;
   padding: 0 1rem;
 }
 
-/* Header */
+/* Header with Logo */
 header {
-  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  background: #111;
   padding: 2rem 1rem;
-  background: #ff0055;
   color: white;
+  text-align: center;
 }
 
-header h1 {
-  font-size: 2.2rem;
-  margin-bottom: 0.3rem;
-}
-
-header p {
-  font-size: 1.1rem;
+header .logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 /* Section Layout */
@@ -49,7 +51,7 @@ section h3 {
   color: #eee;
 }
 
-/* Upload Section */
+/* Upload */
 .upload-box {
   margin-top: 1rem;
 }
@@ -61,7 +63,6 @@ section h3 {
   padding: 0.5rem 1rem;
   border-radius: 5px;
   cursor: pointer;
-  transition: background 0.3s ease;
 }
 
 .upload-label:hover {
@@ -101,7 +102,6 @@ input[type="file"] {
   border-left: 4px solid #ff0055;
   padding: 1rem;
   border-radius: 8px;
-  transition: background 0.3s ease;
 }
 
 .event-card.upcoming {
@@ -125,7 +125,6 @@ input[type="file"] {
   margin: 0.4rem 0;
   text-decoration: none;
   border-radius: 5px;
-  transition: background 0.3s;
   text-align: center;
 }
 
@@ -133,7 +132,7 @@ input[type="file"] {
   background: #e6004d;
 }
 
-/* Contact Info */
+/* Contact */
 .contact-box p {
   margin-bottom: 0.5rem;
 }
