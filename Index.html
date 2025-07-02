@@ -1,44 +1,47 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Leyla’s Freunde – Fanportal</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leyla’s Freunde – Seite</title>
 
-  <!-- SEO -->
-  <meta name="description" content="Leyla’s Freunde – Offizielle Fanplattform für orientalische Popmusik.">
-  <meta name="keywords" content="Leyla’s Freunde, orientalische Popmusik, Band, Fanportal">
+  <!-- Meta Information -->
+  <meta name="description" content="Leyla’s Freunde – Offizielle Seite für orientalische Popmusik.">
+  <meta name="keywords" content="Leyla’s Freunde, orientalische Popmusik, Band, Seite">
   <meta name="theme-color" content="#ff0055">
   <meta property="og:title" content="Leyla’s Freunde – Fanportal">
   <meta property="og:description" content="Offizielle Seite von Leyla’s Freunde mit Bildern, Infos & Musiklinks.">
   <meta property="og:image" content="https://yourdomain.com/preview.jpg">
   <meta property="og:url" content="https://yourdomain.com">
 
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="style.css" />
+  <!-- Favicon & Styles -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
   <script src="app.js" defer></script>
 </head>
 <body>
 
   <header>
-    <img src="band-logo.png" alt="Band Logo" class="logo" />
+    <img src="band-logo.png" alt="Band Logo" class="logo">
     <div class="header-text">
       <h1>Leyla’s Freunde</h1>
-      <p>Offizielle Fanseite</p>
+      <p>Offizielle Seite</p>
     </div>
   </header>
 
   <main>
 
+    <!-- Upload Section -->
     <section id="upload">
       <h2>📸 Bilder deiner Band</h2>
       <div class="upload-box">
         <label for="imageUpload" class="upload-label">Bild auswählen</label>
-        <input type="file" id="imageUpload" accept="image/*" multiple />
+        <input type="file" id="imageUpload" accept="image/*" multiple>
         <div class="gallery" id="gallery"></div>
       </div>
     </section>
 
+    <!-- Band Info Section -->
     <section id="bandinfo">
       <h2>🎤 Über uns</h2>
       <div class="band-info">
@@ -50,6 +53,7 @@
       </div>
     </section>
 
+    <!-- Events Section -->
     <section id="events">
       <h2>🗓️ Veranstaltungen</h2>
       <div class="event-list">
@@ -78,6 +82,7 @@
       </div>
     </section>
 
+    <!-- Social Links Section -->
     <section id="links">
       <h2>🌐 Unsere Seiten</h2>
       <div class="links">
@@ -88,6 +93,7 @@
       </div>
     </section>
 
+    <!-- Contact Section -->
     <section id="contact">
       <h2>📞 Kontakt</h2>
       <div class="contact-box">
@@ -97,18 +103,19 @@
       </div>
     </section>
 
-    <!-- 🔐 Hidden Admin Access -->
+    <!-- Secret Tap Zone for Admin Panel -->
     <div id="secret-zone"></div>
     <div id="secret-tap-area">
       <button id="tapUnlock">🔒</button>
     </div>
 
+    <!-- Admin Panel -->
     <section id="admin-panel">
       <h2>🔐 Admin: Neue Veranstaltung hinzufügen</h2>
       <form id="eventForm">
-        <label>Titel:<br /><input type="text" id="eventTitle" required /></label><br />
-        <label>Datum:<br /><input type="date" id="eventDate" required /></label><br />
-        <label>Ort:<br /><input type="text" id="eventLocation" required /></label><br />
+        <label>Titel:<br><input type="text" id="eventTitle" required></label><br>
+        <label>Datum:<br><input type="date" id="eventDate" required></label><br>
+        <label>Ort:<br><input type="text" id="eventLocation" required></label><br>
         <button type="submit">➕ Veranstaltung hinzufügen</button>
       </form>
       <div id="eventPreview" style="margin-top:1rem;"></div>
